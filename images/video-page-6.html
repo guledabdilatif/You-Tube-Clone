@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome-ie7.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Video page - YouTube-Clone</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="d-flex">
+        <div class="left-bar d-flex">
+            <i class="fa-solid fa-bars" onclick="openMenu()" id="fabars"></i>
+            <a href="index.html">
+                <div class="youtube-icon d-flex">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YouTube</span>
+                </div>
+            </a>
+        </div>
+        <div class="middle-bar d-flex">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <img src="images/voice-search.png" alt="" class="notification">
+        </div>
+        <div class="right-bar d-flex">
+            <img src="images/upload.png" alt="">
+            <img src="images/notification.png" alt="">
+            <img src="images/search.png" alt="">
+            <img src="images/Jack.png" alt="">
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Sidebar -->
+    <div class="d-flex">
+        <div class="side-bar" id="sideBar">
+            <div class="navbar-item d-flex ">
+                <img src="images/home.png" alt="">
+                <h5>Home</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/shorts.jpg" alt="">
+                <h5>Shorts</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/subscriprion.png" alt="">
+                <h5>subscriptions</h5>
+            </div>
+            <hr>
+            <div class="navbar-item d-flex ">
+                <img src="images/library.png" alt="">
+                <h5>Library</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/history.png" alt="">
+                <h5>History</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/messages.png" alt="">
+                <h5>Messages</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/playlist.png" alt="">
+                <h5>Playlist</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/like.png" alt="">
+                <h5>Liked videos</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/show-more.png" alt="">
+                <h5> Show More</h5>
+            </div>
+            <hr>
+            <h2>Subscriptions</h2>
+            <div class="navbar-item d-flex ">
+                <img src="images/megan.png" alt="">
+                <h6>Fatuma Ali</h6>
+                <img src="images/live.png" alt="">
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/Jack.png" alt="">
+                <h6>Jack M.</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/simon.png" alt="">
+                <h6>Hassan Adow</h6>
+            </div>
+            <hr>
+            <h2>Explore</h2>
+            <div class="navbar-item d-flex ">
+                <img src="images/trending.png" alt="">
+                <h6>Trending</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/musical-note.png" alt="">
+                <h6>Music</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/console.png" alt="">
+                <h6>Gaming</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/trophy.png" alt="">
+                <h6>Sports</h6>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- End Sidebar -->
+     <!-- start Video section -->
+
+ <div class="row">
+    <div class="col-md-8">
+        <div class="video-section container">
+            <video width="500px" height="500px" controls="controls" autoplay>
+                <source src="images/Videos/LightningThunder.mp4" type="video/mp4">
+            </video>
+            <h5 class="container">Lightning Thunder</h5>
+            <div class="comment-like-section container">
+                <div class="channel-and-subscribe">
+                    <div class="channel">
+                        <img src="images/Jack.png" alt="">
+                        <p>Learn Coding</p>
+                    </div>
+                    <div class="subscribe">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                <div class="like-dislike-section">
+                    <img src="images/like.png" alt="">
+                    <img src="images/dislike.png" alt="">
+                    <div class="share">
+                        <img src="images/share.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        <div class="comment-section container">
+            <img src="images/tom.png" alt="">
+            <input type="text" placeholder="Add a comment">
+        </div>
+        <div class="user-comment">
+            <div class="user-icon">
+                <img src="images/Jack.png">
+                <p>Wow! thats Great!</p>
+            </div>
+            <div class="user-like-dislike">
+                <img src="images/like.png" alt="">
+                <img src="images/dislike.png" alt="">
+                <p>reply</p>
+            </div>
+        </div>
+        <div class="user-comment">
+            <div class="user-icon">
+                <img src="images/megan.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vel odit harum quasi
+                    cupiditate consequatur tempore eum. Soluta ut, vero odio ex incidunt expedita voluptatibus
+                    possimus culpa error modi vitae?!</p>
+            </div>
+            <div class="user-like-dislike">
+                <img src="images/like.png" alt="">
+                <img src="images/dislike.png" alt="">
+                <p>reply</p>
+            </div>
+        </div>
+        <div class="user-comment">
+            <div class="user-icon">
+                <img src="images/Jack.png">
+                <p>That's Fantastics! Keep going</p>
+            </div>
+            <div class="user-like-dislike">
+                <img src="images/like.png" alt="">
+                <img src="images/dislike.png" alt="">
+                <p>reply</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="side-video-section ">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/BeutifulSunset.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Beutiful Sunset </p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-2.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/CinematicShots.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Cinematic Shots</p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-3.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/CityLife.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>City Life </p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-4.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/DroneShots.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Drone Shots</p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-5.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/FamousLandscape.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Famous Landscape</p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-6.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/LightningThunder.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Lightning Thunder </p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-7.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/MountainLife.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Mountain Life</p>
+                                <h6>Guleid Abdilatif<i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="side-video-section margin-top">
+            <div class="col-md-12 col-sm-12">
+                <a href="video-page-8.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/thumbnails/Nature.webp" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <p>Nature</p>
+                                <h6>Guleid Abdilatif <i class="fa-solid fa-check"></i></h6>
+                                <h5>19K views &bull; 3 days ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Video section -->
+    <script>
+        var sideBar = document.getElementById('sideBar');
+        var mainBody = document.getElementById('mainBody');
+        var Bgcolor = document.getElementById('Bgcolor');
+        function openMenu() {
+            sideBar.classList.toggle('opeMenu');
+            mainBody.classList.toggle('width85');
+            Bgcolor.classList.toggle('bg-thin-color-display');
+        }
+
+
+    </script>
+</body>
+
+</html>

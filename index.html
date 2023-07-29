@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome-ie7.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <title>YouTube-Clone | html, css and js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.js">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="d-flex">
+        <div class="left-bar d-flex">
+            <i class="fa-solid fa-bars" onclick="openMenu()" id="fabars"></i>
+            <a href="index.html">
+                <div class="youtube-icon d-flex">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YouTube</span>
+                </div>
+            </a>
+        </div>
+        <div class="middle-bar d-flex">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <img src="images/voice-search.png" alt="" class="notification">
+        </div>
+        <div class="right-bar d-flex">
+            <img src="images/upload.png" alt="">
+            <img src="images/notification.png" alt="">
+            <img src="images/search.png" alt="">
+            <img src="images/Jack.png" alt="">
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Sidebar -->
+    <div class="bg-thin-color" id="Bgcolor"></div>
+    <div class="d-flex">
+        <div class="side-bar" id="sideBar">
+            
+            <div class="navbar-item d-flex ">
+                <img src="images/home.png" alt="">
+                <h5>Home</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/shorts.jpg" alt="">
+                <h5>Shorts</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/subscriprion.png" alt="">
+                <h5>subscriptions</h5>
+            </div>
+            <hr>
+            <div class="navbar-item d-flex ">
+                <img src="images/library.png" alt="">
+                <h5>Library</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/history.png" alt="">
+                <h5>History</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/messages.png" alt="">
+                <h5>Messages</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/playlist.png" alt="">
+                <h5>Playlist</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/like.png" alt="">
+                <h5>Liked videos</h5>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/show-more.png" alt="">
+                <h5> Show More</h5>
+            </div>
+            <hr>
+            <h2>Subscriptions</h2>
+            <div class="navbar-item d-flex ">
+                <img src="images/megan.png" alt="">
+                <h6>Fatuma Ali</h6>
+                <img src="images/live.png" alt="">
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/Jack.png" alt="">
+                <h6>Jack M.</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/simon.png" alt="">
+                <h6>Hassan Adow</h6>
+            </div>
+            <hr>
+            <h2>Explore</h2>
+            <div class="navbar-item d-flex ">
+                <img src="images/trending.png" alt="">
+                <h6>Trending</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/musical-note.png" alt="">
+                <h6>Music</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/console.png" alt="">
+                <h6>Gaming</h6>
+            </div>
+            <div class="navbar-item d-flex ">
+                <img src="images/trophy.png" alt="">
+                <h6>Sports</h6>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- End Sidebar -->
+    <div class="main-body" id="mainBody">
+        <div class="vid-rows d-flex">
+            <div class="columns">
+                <a href="video-page.html"> <img src="images/thumbnails/BeutifulSunset.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Beutiful Sunset</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <a href="video-page-2.html"> <img src="images/thumbnails/CinematicShots.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Cinematic Shots</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <a href="video-page-3.html"> <img src="images/thumbnails/CityLife.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">The best Video in U-tube</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <a href="video-page-4.html"> <img src="images/thumbnails/DroneShots.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Drone Shots</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vid-rows d-flex">
+            <div class="columns">
+                <a href="video-page-5.html"> <img src="images/thumbnails/FamousLandscape.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">FamousLandscape</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <a href="video-page-6.html"> <img src="images/thumbnails/LightningThunder.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Lightning Thunder</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <a href="video-page-7.html"> <img src="images/thumbnails/MountainLife.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Mountain Life</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <a href="video-page-8.html"> <img src="images/thumbnails/Nature.webp" alt=""></a>
+                <div class="d-flex">
+                    <img src="images/Jack.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Nature</a>
+                        <p>Jack Ma.</p>
+                        <p>20K views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sideBar = document.getElementById('sideBar');
+        var mainBody = document.getElementById('mainBody');
+        var Bgcolor = document.getElementById('Bgcolor');
+        function openMenu() {
+            sideBar.classList.toggle('opeMenu');
+            mainBody.classList.toggle('width85');
+            Bgcolor.classList.toggle('bg-thin-color-display');
+        }
+
+
+    </script>
+</body>
+
+</html>
